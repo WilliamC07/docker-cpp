@@ -1,9 +1,9 @@
 FROM ubuntu:latest
 
-RUN apt-get update
-RUN apt-get upgrade -y
-RUN apt-get install g++ valgrind -y
-
+RUN apt-get update && apt-get install -y \
+    g++ \
+    valgrind \
+    cppcheck
 WORKDIR /project
 COPY main.cpp .
 COPY start.sh .

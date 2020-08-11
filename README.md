@@ -24,3 +24,5 @@ This repo has a memory leak
     docker run -t cpp_test_runner .
     ```
 
+## Goal:
+Have automated linter, static analysis, testing with dynamic analysis (valgrind) with detailed report on what failed

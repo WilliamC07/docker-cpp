@@ -23,6 +23,10 @@ This repo has a memory leak
     ```sh
     docker run -t cpp_test_runner .
     ```
+1. Access bash session of container:
+    ```sh
+    docker exec -it cpp_test_runner /bin/bash
+    ```
 
 ## Goal:
 Have automated linter, static analysis, testing with dynamic analysis (valgrind) with detailed report on what failed
